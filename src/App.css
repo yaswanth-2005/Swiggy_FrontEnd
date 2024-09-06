@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.topBarSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+}
+
+.itemSection {
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.gallery {
+    width: 150px;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+.landingSection {
+    padding: 0 140px;
+}
+
+.companyTitle h2 {
+    color: darkorange;
+}
+
+
+.searchBar input {
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: lightgrey;
+}
+
+.chainSection {
+    display: flex;
+    overflow-x: hidden;
+    position: relative;
+    height: auto;
+}
+
+.loaderSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vendorBox {
+    border-radius: 20px;
+}
+
+.vendorBox img {
+    width: 350px;
+    height: 220px;
+    flex: 0 0 auto;
+    margin-right: 30px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.btnSection {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: 55px;
+}
+
+.btnIcons {
+    font-size: medium;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    margin: 5px;
+    background: lightgray;
+    border: none;
+    color: black;
+    border-radius: 100%;
+}
+
+.firmSection {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.filterButtons {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.categoryButton {
+    width: 10rem;
+    height: 2.5rem;
+    padding: 5px 0;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    font-family: poppins;
+    transition: 2ms ease-in-out;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.categoryDisableButton {
+    width: 10rem;
+    height: 2.5rem;
+    padding: 5px 0;
+    background-color: white;
+    color: orangered;
+    border: 1px solid orangered;
+    border-radius: 20px;
+    font-weight: bold;
+    font-family: poppins;
+    transition: 200ms ease-in-out;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+}
+
+
+
+.firmGroup {
+    position: relative;
+}
+
+.firmGroup img {
+    width: 240px;
+    height: 180px;
+    flex: 0 0 auto;
+    margin-right: 30px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.firmDetails {
+    /* border: 1px solid black; */
+    padding-left: 10px;
+}
+
+
+.firmName {
+    color: black;
+}
+
+.firmOffer {
+    width: 100%;
+    max-width: 85%;
+    position: absolute;
+    bottom: 5px;
+    padding-left: 10px;
+    background-color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: transparent;
+    background: linear-gradient(to bottom, rgba(50, 0, 0, 0.08), black);
+    color: white;
+    text-transform: uppercase;
+}
+
+.firmArea {
+    color: gray;
+    font-size: small;
+}
+
+.productSection {
+    display: flex;
+    flex-direction: column;
+    padding: 0 150px;
+    margin-top: 20px;
+}
+
+.productSection h3 {
+    text-align: center;
+    background-color: orange;
+    border-radius: 20px;
+}
+
+.productBox {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    border-top: 2px solid lightgray;
+    position: relative;
+}
+
+.productGroup img {
+    width: 100px;
+    border-radius: 10px;
+}
+
+.addButton {
+    text-align: center;
+    background-color: white;
+    color: lightgreen;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    max-width: 60px;
+    border: 1px solid lightgray;
+    margin-left: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.link {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* media queries*/
+@media (max-width: 576px) {
+    .topBarSection {
+        padding: 0 20px;
+    }
+
+    .landingSection {
+        padding: 0 10px;
+    }
+
+    .itemSection {
+        margin-top: 30px;
+    }
+
+    h3 {
+        font-weight: 800;
+        font-size: medium;
+        color: rgb(34, 30, 30);
+    }
+
+    .chainSection {
+        height: 190px;
+        position: relative;
+    }
+
+    .btnIcons {
+        height: 30px;
+        width: 30px;
+    }
+
+    .vendorBox img {
+        width: 260px;
+        height: 180px;
+        flex: 0 0 auto;
+        margin-right: 30px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .mediaChainSection {
+        margin-top: -30px;
+    }
+
+
+
+    .firmSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+    }
+
+
+
+    .firmOffer {
+        position: absolute;
+        width: 100%;
+        max-width: 88%;
+    }
+
+    .firmGroup img {
+        width: 300px;
+    }
+
+    .productSection {
+        padding: 0 10px;
+    }
+
+    .productSection h3 {
+        text-align: center;
+        background-color: orange;
+    }
+
+    .searchBar {
+        border: 1px solid red;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        display: none;
+    }
+
+    .searchBar input {
+        width: 100%;
+        max-width: 50%;
+    }
+
+    .filterButtons button {
+        width: 5rem;
+        padding: 5px;
+        margin-right: 5px;
+    }
+
+    .userAuth {
+        margin-right: 10px;
+    }
+
+    .btnIcons {
+        font-size: large;
+        gap: 2px;
+    }
+
+    .chainTitle {
+        position: relative;
+        top: -10px;
+    }
+
+    .loaderSection {
+        position: relative;
+        background: transparent;
+        display: flex;
+        flex-direction: column;
+        top: 100px;
+    }
+}
